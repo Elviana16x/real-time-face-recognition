@@ -1,24 +1,24 @@
 # Real-Time-Face-Recognition (OpenCV)
 
-Create a fast real-time face recognition app with few lines of python code.
+Buat aplikasi pengenalan wajah real-time yang cepat dengan beberapa baris kode python.
 
 <img src = 'https://github.com/medsriha/Real-Time-Face-Recognition/blob/master/gif.gif?raw=true'><center>
 
 ## Steps:
 
-`cmd: python face_taker.py`
-1) Take pictures using the `face_taker.py` script. The script will save 30 images of your face in the `images` folder after you entered the ID number (MUST be integer and incremental (starts with 1 then 2, 3, ...)
-Note: Make sure your face is centered. The window will collapse when all the 30 pictures are taken.
+`cmd: python face_taker.py` 
+
+1) Ambil gambar menggunakan skrip `face_taker.py`. Script akan menyimpan 30 gambar wajah Anda di folder `gambar` setelah Anda memasukkan nomor ID (HARUS bilangan bulat dan inkremental (dimulai dengan 1 lalu 2, 3, ...) Catatan: Pastikan wajah Anda berada di tengah. Jendela akan runtuh ketika 30 gambar diambil.
 
 
 `cmd: python face_train.py`
 
-2) The `face_tain.py` script will train a model to recognize all the faces from the 30 images taken using `face_taker.py` script, and save the training output in the `training.yml` file.
+2) Skrip `face_tain.py` akan melatih model untuk mengenali semua wajah dari 30 gambar yang diambil menggunakan skrip `face_taker.py`, dan menyimpan keluaran pelatihan di file `training.yml`.
 
 
 `cmd: python face_recognizer.py`
 
-3) The `face_recognizer.py` is the main script. You need to append the name of each person with the picture taken in the `face_taker.py` script. The program will recognize the face according to the id given in the `face_taker.py` script. If Joe has an id 1, his name should appear in the list as index 1 like such `names = ['None', 'Joe'] # keep None and append a name into this list`
+3) `face_recognizer.py` adalah skrip utama. Anda perlu menambahkan nama setiap orang dengan gambar yang diambil di skrip `face_taker.py`. Program akan mengenali wajah sesuai dengan id yang diberikan dalam skrip `face_taker.py`. Jika Joe memiliki id 1, namanya akan muncul dalam daftar sebagai indeks 1 seperti `names = ['None', 'Elviana'] # keep None dan tambahkan nama ke dalam daftar ini`
 
 Requirements:
 
